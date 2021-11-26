@@ -1,0 +1,42 @@
+.shake-vertical {
+	-webkit-animation: shake-vertical 1.7s ease-in-out infinite alternate both;
+	        animation: shake-vertical 1.7s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes shake-vertical {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  33% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+  }
+  66% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+  }
+}
+@keyframes shake-vertical {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  33% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+  }
+  66% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px)
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+  }
+}
+

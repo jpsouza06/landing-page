@@ -1,0 +1,53 @@
+.button {
+  background: var(--green);
+  max-width: 500px;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  border: 0;
+  font-size: 1.5rem;
+  text-align: center;
+
+  mix-blend-mode: normal;
+  text-shadow: 4px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    width: 80%;
+  }
+}
+
+.pulsate-fwd {
+	-webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}

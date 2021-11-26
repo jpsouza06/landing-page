@@ -1,0 +1,391 @@
+
+.footer {
+  .outside-promotion-box {
+    background-color: var(--purple);
+    padding: 4.375rem;
+
+    .promotion-box {
+      max-width: 800px;
+      width: 80%;
+      padding: 2.25rem;
+
+      border-radius: 20px;
+      box-shadow: 13px 13px 5px rgba(0,0,0,0.5);
+
+      background: white;
+
+      text-align: center;
+
+      .price {
+        color: var(--green);
+        font-size: 3.5625rem;
+
+        span {
+          text-decoration: line-through;
+        }
+      }
+
+      .bonus {
+        color: #656363;
+        font-size: 2.5rem;
+        font-weight: 600;
+       }
+
+       .ebook {
+        color: black;
+        font-size: 2.5rem;
+        font-weight: 800;
+        max-width: 450px;
+         width: 100%;
+       }
+
+       .red-box {
+         max-width: 1080px;
+         width: 90%;
+         display: grid;
+         grid-template-columns: auto auto auto;
+         margin: 2rem 0;
+
+         text-align: center;
+        img {
+          width: 3.125rem;
+          margin-top: 1rem;
+        }
+
+         h2 {
+           width: 100%;
+          font-size: 1.25rem;
+          font-weight: 400;
+          font-style: italic;
+
+          padding: 1.5rem 1.25rem;
+          background-color: var(--red);
+         }
+
+         .timer {
+          width: 100%;
+
+          font-size: 1.625rem;
+          font-weight: 800;
+
+          padding: 1.25rem;
+          background-color: var(--red);
+          border-radius: 0 10px 10px 0;
+
+          span {
+            font-size: 1rem;
+            font-weight: 400;
+          }
+         }
+       }
+
+       .button-container {
+          .button {
+            max-width: 700px;
+            width: 90%;
+          }
+        display: grid;
+       }
+    }
+  }
+
+ .stamp-text {
+  max-width: 1080px;
+
+  display: grid;
+  grid-template-columns: 400px auto;
+  
+  align-items: center;
+  margin: 2rem auto;
+
+  p {
+    padding: 0.7rem;
+    text-align: justify;
+
+    span {
+      color: var(--green); 
+    }
+  }
+ } 
+
+ .about {
+  margin: 2rem auto;
+
+  h1 {
+    display: flex;
+
+    mix-blend-mode: normal;
+    text-shadow: 6px 3px 4px rgba(0, 0, 0, 0.25);
+ 
+    strong {
+     color: var(--green);
+     background: var(--purple);
+     
+ 
+     border: 1px solid #250C5E;
+   
+     box-shadow: 10px 10px 1px rgba(58, 21, 143, 1);
+     line-height: 3rem;
+   }
+  }
+
+  .about-content {
+    max-width: 1080px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 400px auto;
+
+    align-items: center;
+    margin: 2rem auto;
+
+    background-color: var(--purple);
+
+
+    img {
+
+      width: 100%;
+    }
+
+    p {
+      text-align: justify;
+      line-height: 2rem;
+      width: 80%;
+    }
+  }
+ }
+
+ .arrow-button {
+  display: grid;
+  margin: 2rem auto;
+  row-gap: 2rem;
+
+  img {
+    width: 5rem;
+  }
+ }
+
+ .doubts-container {
+  padding: 2rem 0;
+  background-color: var(--purple);
+
+  .doubts-content {
+    max-width: 1080px;
+    width: 90%;
+
+    h1 {
+      text-align: center;
+      padding-bottom: 2rem;
+      text-shadow: 6px 3px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+   div {
+    margin-bottom: 3rem;
+    h2 {
+      color: var(--green);
+      text-shadow: 6px 3px 4px rgba(0, 0, 0, 0.25);
+
+    }
+
+   }
+  }
+ }
+
+ .policy-terms {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 500px;
+  width: 50%;
+  
+  padding: 2rem 0;
+
+ }
+}
+
+@media screen and (max-width: 1080px) {
+  .footer {
+    h1 {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .outside-promotion-box{
+      .promotion-box {
+        width: 100%;
+
+        .price {
+          font-size: 2.875rem;
+        }
+
+        .bonus {
+          font-size: 1.875rem;
+        }
+
+        .ebook {
+          width: 60%;
+          font-size: 1.875rem;
+        }
+
+        .red-box {
+          grid-template-columns: auto auto auto;
+          h2 {
+            width: 100%;
+            font-size: 0.9375rem;
+
+            padding: 1.5rem 0.5rem;
+          }
+
+          img {
+            margin-top: 0.7rem;
+          }
+
+          .timer {
+            width: 100%;
+            padding: 1rem 0.7rem;
+            font-size: 1.5rem;
+            }
+            span {
+              font-size: 0.8rem;
+            }
+        }
+
+      }
+    }
+
+    .stamp-text {
+      p {
+        font-size: 0.9rem;
+        width: 90%;
+        padding: 0;
+        margin-right: 3rem;
+        text-align: justify;
+      }
+    }
+
+    .about {
+      .about-content {
+        grid-template-columns: auto auto;
+        img {
+          width: 90%;
+        }
+        p {
+          margin: 1rem 0;
+          width: 90%;
+
+          line-height: 1.3rem;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    h1 {
+      font-size: 1.375rem;
+      line-height: 1.9rem;
+      width: 95%;
+    }
+
+    p, ul {
+      font-size: 0.9rem;
+    }
+
+    .button {
+      font-size: 1rem;
+    }
+
+    strong {
+      line-height: 3.5rem;
+
+    }
+
+    .outside-promotion-box {
+      padding: 2rem 0;
+
+      .promotion-box {
+        max-width: 500px;
+        width: 90%;
+        padding: 2rem 0;
+
+        .price {
+          font-size: 1.5rem;
+
+        }
+
+        .bonus {
+          font-size: 1.25rem;
+
+        }
+
+        .ebook {
+          font-size: 1.25rem;
+          max-width: 225px;
+          width: 90%;
+        }
+
+        .red-box{
+          max-width: 500px;
+          width: 80%;
+          margin: 2rem auto;
+
+          display: flex;
+          flex-direction: column;
+
+          img {
+            margin-bottom: 0.5rem;
+          }
+          h2 {
+            padding: 0;
+            bottom: 0;
+          }
+          .timer {
+            padding: 0;
+            padding-bottom: 0.5rem;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+
+    .stamp-text {
+      grid-template-columns: auto;
+
+      img {
+        width: 50%;
+      }
+
+      p {
+        margin: 0 auto;
+      }
+    }
+
+    .about {
+      .about-content {
+        grid-template-columns: auto;
+        img {
+
+          width: 60%;
+        }
+        p {
+
+          margin: 1rem auto;
+        }
+      }
+    }
+
+    .policy-terms {
+      column-gap: 0.5rem;
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background:#6F39EE;
+  --purple: #3A158F;
+  --green: #8CE620;
+  --red: #E62020;
+}
+
+html, a {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+body, 
+html {
+  background: var(--background);
+}
+
+a {
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 800;
+  line-height: 50px;
+  font-size: 40px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 1.875rem;
+}
+
+p, ul {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
