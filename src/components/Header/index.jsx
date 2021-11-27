@@ -19,10 +19,9 @@ export default function Header() {
             )
           }}
         >
-            <img src="./images/play.png" alt="image-play" />
+            <img src="./images/play.png" alt="foto"/>
             {videoActive && (
               <iframe 
-                    name="youtube-player"
                     className="video-player"
                     src="https://www.youtube.com/embed/lpcpsCY4Mco"
                     title="YouTube video player" 
@@ -40,6 +39,8 @@ export default function Header() {
           className="button pulsate-fwd" 
           href="https://google.com.br/" 
           target="blank"
+          rel="noopener noreferrer"
+          
         >
           QUERO MUDAR DE VIDA
         </a>

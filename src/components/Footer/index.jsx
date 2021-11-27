@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState} from 'react'
+import { useEffect, useState} from 'react'
 
 import './footer.scss'
 import '../../styles/button.scss'
@@ -9,35 +9,28 @@ export default function Footer() {
   const [timerMinutes, setTimerMinutes] = useState('00')
   const [timerSeconds, setTimerSeconds] = useState('00')
 
-  let interval = useRef();
+
 
   const startTimer = () => {
     const countdownDate = new Date('Jan 01, 2025 00:00:00').getTime();
 
-    interval = setInterval(() => {
+    setInterval(() => {
       const now = new Date().getTime(); 
       const distance = countdownDate - now;
 
       const hours = Math.floor((distance %(1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
       const minutes = Math.floor((distance %(1000 * 60 * 60)) / (1000 * 60))
       const seconds = Math.floor((distance % (1000 * 60)) / 1000)
-
-      if (distance < 0) {
-        clearInterval(interval.current);
-      } else {
-        setTimerHours(hours);
-        setTimerMinutes(minutes);
-        setTimerSeconds(seconds);
-      }
+      
+      setTimerHours(hours);
+      setTimerMinutes(minutes);
+      setTimerSeconds(seconds);
 
     }, 1000)
   };
 
   useEffect(() => {
     startTimer();
-    return () => {
-      clearInterval(interval.current);
-    }
   })
 
   return (
@@ -94,6 +87,7 @@ export default function Footer() {
             className="button pulsate-fwd" 
             href="https://google.com.br/" 
             target="blank"
+            rel="noopener noreferrer"
           >
             QUERO SAIR DAS ESTATÍSTICAS
           </a>
@@ -133,11 +127,16 @@ export default function Footer() {
             </div>
           </section>
         </section>
+
+        <div className="red-box-fixed">
+          <h2>Essa <strong>oferta</strong> se encerra em:</h2>
+           <h3 className="timer">{timerHours} <span>Hrs</span> {timerMinutes} <span>Mins</span> {timerSeconds} <span>Segs</span></h3>
+        </div>
         
 
         <div className="policy-terms">
-          <a href="https://metodom7.com/politica-privacidade/" target="_blank" >Política de privacidade</a>
-          <a href="https://metodom7.com/termos-de-uso/" target="_blank">Termos de uso</a>
+          <a href="https://metodom7.com/politica-privacidade/" target="_blank" rel="noopener noreferrer">Política de privacidade</a>
+          <a href="https://metodom7.com/termos-de-uso/" target="_blank" rel="noopener noreferrer">Termos de uso</a>
         </div>
       </footer>
   );

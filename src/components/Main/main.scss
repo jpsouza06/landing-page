@@ -247,6 +247,10 @@
 
     }
 
+    .title {
+      max-width: 400px;
+    }
+
     .box {
       h2 {
         font-size: 1.3rem;
@@ -278,6 +282,10 @@
     }
 
     .title-image {
+      h1 {
+        max-width: 700px;
+        width: 90%;
+      }
       img {
         width: 80%;
       }
@@ -285,10 +293,12 @@
 
     .section-title-arrow {
       .first-title {
+        max-width: 400px;
         width: 97%;
       }
 
       .second-title {
+        max-width: 400px;
         width: 95%;
       }
 
