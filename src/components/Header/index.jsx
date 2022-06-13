@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <div className="header">
-        <h1>Como, FINALMENTE1, queimar gordura <strong>SEM SE TORTURAR</strong></h1>
+        <h1>Como, FINALMENTE, queimar gordura <strong>SEM SE TORTURAR</strong></h1>
         
         <div 
           className="image-video" 
